@@ -78,7 +78,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 1,
+   "execution_count": 2,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -87,7 +87,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 2,
+   "execution_count": 3,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -110,7 +110,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 3,
+   "execution_count": 4,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -128,7 +128,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 4,
+   "execution_count": 5,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -158,7 +158,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 5,
+   "execution_count": 6,
    "metadata": {
     "scrolled": false
    },
@@ -169,7 +169,7 @@
        "(6947, 23)"
       ]
      },
-     "execution_count": 5,
+     "execution_count": 6,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -194,7 +194,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 6,
+   "execution_count": 7,
    "metadata": {},
    "outputs": [
     {
@@ -406,7 +406,7 @@
        "[5 rows x 23 columns]"
       ]
      },
-     "execution_count": 6,
+     "execution_count": 7,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -424,7 +424,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 7,
+   "execution_count": 8,
    "metadata": {},
    "outputs": [
     {
@@ -456,7 +456,7 @@
        "dtype: object"
       ]
      },
-     "execution_count": 7,
+     "execution_count": 8,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -474,7 +474,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 8,
+   "execution_count": 9,
    "metadata": {
     "scrolled": true
    },
@@ -508,7 +508,7 @@
        "dtype: int64"
       ]
      },
-     "execution_count": 8,
+     "execution_count": 9,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -526,7 +526,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 9,
+   "execution_count": 10,
    "metadata": {},
    "outputs": [
     {
@@ -538,7 +538,7 @@
        "dtype: int64"
       ]
      },
-     "execution_count": 9,
+     "execution_count": 10,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -556,7 +556,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 10,
+   "execution_count": 11,
    "metadata": {},
    "outputs": [
     {
@@ -614,7 +614,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 11,
+   "execution_count": 12,
    "metadata": {},
    "outputs": [
     {
@@ -1000,7 +1000,7 @@
        "[6947 rows x 23 columns]"
       ]
      },
-     "execution_count": 11,
+     "execution_count": 12,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -1020,27 +1020,13 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 12,
+   "execution_count": null,
    "metadata": {},
-   "outputs": [
-    {
-     "ename": "ValueError",
-     "evalue": "could not convert string to float: '30s'",
-     "output_type": "error",
-     "traceback": [
-      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
-      "\u001b[0;31mValueError\u001b[0m                                Traceback (most recent call last)",
-      "\u001b[0;32m<ipython-input-12-2f4738052af4>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0;31m# Changing Age type\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      2\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 3\u001b[0;31m \u001b[0mdf\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;34m'age'\u001b[0m\u001b[0;34m]\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mdf\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;34m'age'\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mapply\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mfloat\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
-      "\u001b[0;32m/opt/anaconda3/lib/python3.7/site-packages/pandas/core/series.py\u001b[0m in \u001b[0;36mapply\u001b[0;34m(self, func, convert_dtype, args, **kwds)\u001b[0m\n\u001b[1;32m   3846\u001b[0m             \u001b[0;32melse\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   3847\u001b[0m                 \u001b[0mvalues\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mastype\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mobject\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mvalues\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m-> 3848\u001b[0;31m                 \u001b[0mmapped\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mlib\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mmap_infer\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mvalues\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mf\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mconvert\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mconvert_dtype\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m   3849\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   3850\u001b[0m         \u001b[0;32mif\u001b[0m \u001b[0mlen\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mmapped\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;32mand\u001b[0m \u001b[0misinstance\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mmapped\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;36m0\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mSeries\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
-      "\u001b[0;32mpandas/_libs/lib.pyx\u001b[0m in \u001b[0;36mpandas._libs.lib.map_infer\u001b[0;34m()\u001b[0m\n",
-      "\u001b[0;31mValueError\u001b[0m: could not convert string to float: '30s'"
-     ]
-    }
-   ],
+   "outputs": [],
    "source": [
     "# Changing Age type\n",
     "\n",
-    "# df['age'] = df['age'].apply(float)"
+    "# example df['age'] = df['age'].apply(float)"
    ]
   },
   {
@@ -1052,7 +1038,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 13,
+   "execution_count": 20,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -1068,7 +1054,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 14,
+   "execution_count": 21,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -1084,7 +1070,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 15,
+   "execution_count": 22,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -1121,7 +1107,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 16,
+   "execution_count": 23,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -1137,7 +1123,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 17,
+   "execution_count": 24,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -1153,7 +1139,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 18,
+   "execution_count": 25,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -1165,94 +1151,6 @@
    "metadata": {},
    "source": [
     "## <font color='DarkBlue'>III. <ins>Analysing Descriptive Statistics</ins>: <font color='blue'></font>"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 20,
-   "metadata": {},
-   "outputs": [
-    {
-     "data": {
-      "text/plain": [
-       "date                25\n",
-       "year                27\n",
-       "type                43\n",
-       "country             75\n",
-       "state              506\n",
-       "location           589\n",
-       "activity           610\n",
-       "name               244\n",
-       "sex                604\n",
-       "age               3016\n",
-       "injury              60\n",
-       "unnamed:_11        586\n",
-       "time              3547\n",
-       "species           3153\n",
-       "source              44\n",
-       "pdf                148\n",
-       "href_formula       128\n",
-       "href               151\n",
-       "case_number        149\n",
-       "case_number.1      150\n",
-       "original_order     148\n",
-       "unnamed:_21       6946\n",
-       "unnamed:_22       6945\n",
-       "dtype: int64"
-      ]
-     },
-     "execution_count": 20,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
-   "source": [
-    "# Number of missing values for each column\n",
-    "df.isna().sum()\n"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 23,
-   "metadata": {},
-   "outputs": [
-    {
-     "data": {
-      "text/plain": [
-       "date               0.359868\n",
-       "year               0.388657\n",
-       "type               0.618972\n",
-       "country            1.079603\n",
-       "state              7.283720\n",
-       "location           8.478480\n",
-       "activity           8.780769\n",
-       "name               3.512307\n",
-       "sex                8.694400\n",
-       "age               43.414423\n",
-       "injury             0.863682\n",
-       "unnamed:_11        8.435296\n",
-       "time              51.058011\n",
-       "species           45.386498\n",
-       "source             0.633367\n",
-       "pdf                2.130416\n",
-       "href_formula       1.842522\n",
-       "href               2.173600\n",
-       "case_number        2.144811\n",
-       "case_number.1      2.159205\n",
-       "original_order     2.130416\n",
-       "unnamed:_21       99.985605\n",
-       "unnamed:_22       99.971211\n",
-       "dtype: float64"
-      ]
-     },
-     "execution_count": 23,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
-   "source": [
-    "# pourcentage of missing values for each column\n",
-    "df.isna().sum()/df.shape[0]*100"
    ]
   },
   {
